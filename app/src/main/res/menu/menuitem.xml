@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/search"
+        app:showAsAction="ifRoom|withText"
+        android:icon="@drawable/baseline_search_24"
+        android:title="@string/search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView">
+    </item>
+
+    <item
+        android:id="@+id/selectall"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/baseline_select_all_24"
+        android:title="@string/select_all"
+        android:visible="false">
+    </item>
+
+    <item
+        android:id="@+id/deSelectall"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/baseline_deselect_24"
+        android:title="@string/deselect_all"
+        android:visible="false">
+    </item>
+
+    <item
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/baseline_more_vert_24"
+        android:title="">
+
+        <menu>
+            <item
+                android:id="@+id/theme"
+                android:title="@string/theme"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/logoutBtn"
+                android:title="@string/log_out"
+                app:showAsAction="never"/>
+
+
+            <item
+                android:id="@+id/deleteall"
+                android:title="@string/delete_all"
+                app:showAsAction="never"/>
+
+            <item
+                android:id="@+id/sort"
+                android:title="@string/sort"
+                app:showAsAction="never">
+
+                <menu>
+                    <item
+                        android:id="@+id/sort1"
+                        android:title="@string/a_z"
+                        app:showAsAction="never"/>
+                    <item
+                        android:id="@+id/sort2"
+                        android:title="@string/z_a"
+                        app:showAsAction="never"/>
+
+                    <item
+                        android:id="@+id/sort3"
+                        android:title="@string/last_modified"
+                        app:showAsAction="never"/>
+
+                    <item
+                        android:id="@+id/sort4"
+                        android:title="@string/last_inserted"
+                        app:showAsAction="never"/>
+                </menu>
+            </item>
+        </menu>
+    </item>
+
+
+
+</menu>

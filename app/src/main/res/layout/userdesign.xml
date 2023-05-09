@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="@dimen/_2sdp"
+    app:cardPreventCornerOverlap="true"
+    app:cardCornerRadius="@dimen/_10sdp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/viewavatar"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:src="@drawable/baseline_account_circle_24"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/viewavatar"
+            android:id="@+id/viewname"
+            android:text="@string/app_name"
+            android:textSize="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_30sdp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/viewavatar"
+            android:id="@+id/viewphone"
+            android:text="@string/app_name"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_below="@+id/viewname"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/viewavatar"
+            android:id="@+id/viewemail"
+            android:text="@string/app_name"
+            android:layout_below="@+id/viewphone"
+            android:layout_marginStart="@dimen/_30sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/viewavatar"
+            android:id="@+id/viewgender"
+            android:text="@string/app_name"
+            android:layout_below="@+id/viewemail"
+            android:layout_marginStart="@dimen/_30sdp"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkRight"
+            android:background="#FFF"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/baseline_check_circle_24"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
